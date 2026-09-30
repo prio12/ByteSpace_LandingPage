@@ -1,9 +1,9 @@
-import Hero from "./components/home/Hero";
+import Banner from "./components/home/Banner";
 
 export default function App() {
   return (
     <main>
-      <Hero />
+      <Banner />
     </main>
   );
 }
