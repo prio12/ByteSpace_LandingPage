@@ -1,5 +1,6 @@
 import Navbar from "../common/Navbar";
 import HeroContent from "./HeroContent";
+import HeroVisuals from "./HeroVisuals";
 import Ornaments from "./Ornaments";
 
 const Banner = () => {
@@ -8,6 +9,7 @@ const Banner = () => {
       <div className="relative mx-auto h-[1024px] w-full max-w-[1440px]">
         <Navbar />
         <HeroContent />
+        <HeroVisuals />
         <Ornaments />
       </div>
     </section>
