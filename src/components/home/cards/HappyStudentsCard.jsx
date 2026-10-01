@@ -7,12 +7,22 @@ const Star = () => (
   </svg>
 );
 
-const HappyStudentsCard = ({ className = "" }) => {
+const HappyStudentsCard = ({ className = "", compact = false }) => {
   return (
     <FloatingCard className={`w-[258px] ${className}`}>
       <div>
-        <p className="text-[16px] font-medium leading-[19px]">Happy Students</p>
-        <p className="flex items-center text-[12px] leading-[19px] text-[#82868E]">
+        <p
+          className={`text-[16px] font-medium ${compact ? "leading-6" : "leading-[19px]"}`}
+        >
+          Happy Students
+        </p>
+        <p
+          className={`flex items-center text-[#82868E] ${
+            compact
+              ? "h-4 text-[10px] leading-[15px]"
+              : "text-[12px] leading-[19px]"
+          }`}
+        >
           4.5 (240)
           <Star />
         </p>
