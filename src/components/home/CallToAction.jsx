@@ -1,10 +1,12 @@
 import Ornaments from "./Ornaments";
 import { ctaOrnaments } from "../../data/ornaments";
+import GridBackground from "../common/GridBackground";
 
 const CallToAction = () => {
   return (
     <section className="overflow-hidden bg-[#003BE2]">
       <div className="relative mx-auto h-[488px] w-full max-w-[1440px] px-4 pt-[85px] max-[1199px]:h-auto max-[1199px]:pb-16 max-[1199px]:pt-16">
+        <GridBackground />
         <div className="max-[1199px]:hidden">
           <Ornaments items={ctaOrnaments} />
         </div>

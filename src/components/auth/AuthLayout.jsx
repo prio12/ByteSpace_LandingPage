@@ -3,8 +3,8 @@ import { authOrnaments } from "../../data/ornaments";
 import CourseCard from "../home/CourseCard";
 import HappyStudentsCard from "../home/cards/HappyStudentsCard";
 import Ornaments from "../home/Ornaments";
-import AuthGrid from "./AuthGrid";
 import Navbar from "../common/Navbar";
+import GridBackground from "../common/GridBackground";
 
 const buildDigitalAsset = courses.find((c) => c.id === 2);
 const bigData = courses.find((c) => c.id === 3);
@@ -13,7 +13,7 @@ const AuthLayout = ({ heading, description, children }) => {
   return (
     <section className="overflow-hidden bg-[#003BE2]">
       <div className="relative mx-auto h-[1024px] w-full max-w-[1440px]">
-        <AuthGrid />
+        <GridBackground />
         <Navbar logoOnly />
         <div className="absolute left-[122px] top-[120px] z-10 flex w-[475px] flex-col gap-4 text-[#F5F5F6]">
           <h2 className="font-[family-name:Poppins] text-[20px] font-semibold leading-6">
