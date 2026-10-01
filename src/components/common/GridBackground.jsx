@@ -3,7 +3,7 @@ const HORIZONTAL = Array.from({ length: 9 }, (_, i) => i * 120);
 
 const LINE = "bg-white/12";
 
-const AuthGrid = () => (
+const GridBackground = () => (
   <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
     {VERTICAL.map((x) => (
       <div
@@ -22,4 +22,4 @@ const AuthGrid = () => (
   </div>
 );
 
-export default AuthGrid;
+export default GridBackground;
