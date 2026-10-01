@@ -35,7 +35,7 @@ const CourseCard = ({ course, variant = "default" }) => {
   const v = variants[variant];
 
   return (
-    <article className="relative h-[384px] w-full rounded-3xl border border-[#CED0D3] bg-white p-[15px] font-[family-name:Satoshi]">
+    <article className="relative h-[384px] w-full max-w-[373px] rounded-3xl border border-[#CED0D3] bg-white p-[15px] font-[family-name:Satoshi]">
       <div className="h-[195.14px] w-full overflow-hidden rounded-xl bg-[#443131]">
         {image && (
           <img src={image} alt={title} className="size-full object-cover" />
