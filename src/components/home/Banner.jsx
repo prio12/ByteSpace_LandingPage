@@ -5,12 +5,14 @@ import Ornaments from "./Ornaments";
 
 const Banner = () => {
   return (
-    <section className="overflow-hidden bg-[#003be2]">
-      <div className="relative mx-auto h-[1024px] w-full max-w-[1440px]">
+    <section className="overflow-hidden bg-[#003BE2]">
+      <div className="relative mx-auto h-[1024px] w-full max-w-[1440px] max-lg:h-auto max-lg:pb-16">
         <Navbar />
         <HeroContent />
         <HeroVisuals />
-        <Ornaments />
+        <div className="max-lg:hidden">
+          <Ornaments />
+        </div>
       </div>
     </section>
   );
