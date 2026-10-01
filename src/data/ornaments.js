@@ -11,7 +11,8 @@ import ctaLimeCone from "../assets/icons/CtaOrnaments/limeTopConePyramid.png";
 import ctaWhiteSmallTopSpiral from "../assets/icons/CtaOrnaments/whiteSmallTopSpiral.png";
 import ctaLimeHalfCircle from "../assets/icons/CtaOrnaments/limeHalfCircle.png";
 import ctaTopRightBigDiag from "../assets/icons/CtaOrnaments/toprightWhiteBigrect.png";
-
+import authLimeCircle from "../assets/images/authLimeCircle.png";
+import authLimePyramid from "../assets/images/authLimePyramid.png";
 export const ornaments = [
   {
     label: "lime-spiral-coil",
@@ -128,5 +129,33 @@ export const ctaOrnaments = [
     y: 5,
     w: 218,
     h: 372,
+  },
+];
+
+export const authOrnaments = [
+  {
+    label: "auth-spiral-small",
+    src: ctaWhiteSmallTopSpiral,
+    side: "left",
+    x: 470,
+    y: 626,
+    size: 175,
+    rotate: 180,
+  },
+  {
+    label: "auth-circle",
+    src: authLimeCircle,
+    side: "left",
+    x: 151,
+    y: 320,
+    size: 146,
+  },
+  {
+    label: "auth-pyramid",
+    src: authLimePyramid,
+    side: "left",
+    x: 97,
+    y: 702,
+    size: 188,
   },
 ];
