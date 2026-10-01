@@ -1,4 +1,5 @@
 import GlowBackground from "../common/GlowBackground";
+import ManageFeature from "./ManageFeature";
 import PathFeature from "./PathFeature";
 
 const Features = () => {
@@ -7,7 +8,7 @@ const Features = () => {
       <GlowBackground />
       <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col gap-[72px] pl-[121px] pt-[120px]">
         <PathFeature />
-        {/* second feature block (Frame 14) goes here next */}
+        <ManageFeature />
       </div>
     </section>
   );
