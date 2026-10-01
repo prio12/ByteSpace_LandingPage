@@ -7,6 +7,7 @@ import ExploreIntro from "./components/home/ExploreIntro";
 import Features from "./components/home/Features";
 import PartnerLogos from "./components/home/PartnerLogos";
 import PathCards from "./components/home/PathCards";
+import Testimonials from "./components/home/Testimonials";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <PathCards />
       <Features />
       <CallToAction />
+      <Testimonials />
     </main>
   );
 }
