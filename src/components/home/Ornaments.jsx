@@ -1,37 +1,34 @@
 import { ornaments } from "../../data/ornaments";
 
-const Ornaments = () => {
+const Ornaments = ({ items = ornaments }) => {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute inset-0 z-[5] overflow-hidden"
+      style={{
+        position: "absolute",
+        inset: 0,
+        zIndex: 5,
+        overflow: "hidden",
+        pointerEvents: "none",
+      }}
     >
-      {ornaments.map(({ label, src, side, x, y, size, rotate = 0 }) => {
-        const style = {
-          [side]: x,
-          top: y,
-          width: size,
-          height: size,
-          transform: rotate ? `rotate(${rotate}deg)` : undefined,
-        };
-        return src ? (
-          <img
-            key={label}
-            src={src}
-            alt=""
-            style={style}
-            className="absolute max-w-none object-contain"
-          />
-        ) : (
-          <div
-            key={label}
-            style={style}
-            className="absolute grid place-items-center border-2 border-dashed border-white/60 bg-white/10 text-xs text-white"
-          >
-            {label} {size}px
-          </div>
-        );
-      })}
+      {items.map(({ label, src, side, x, y, size, w, h, rotate = 0 }) => (
+        <img
+          key={label}
+          src={src}
+          alt=""
+          style={{
+            position: "absolute",
+            [side]: x,
+            top: y,
+            width: w ?? size,
+            height: h ?? size,
+            maxWidth: "none",
+            objectFit: "contain",
+            transform: rotate ? `rotate(${rotate}deg)` : undefined,
+          }}
+        />
+      ))}
     </div>
   );
 };

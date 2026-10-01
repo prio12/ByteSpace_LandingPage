@@ -4,6 +4,13 @@ import WhiteRingDonutShape from "../assets/icons/WhiteRingDonutShape.png";
 import DiagonalStripLime from "../assets/icons/DiagonalStripLime.png";
 import White3DConePyramid from "../assets/icons/White3DConePyramid.png";
 import bigspiralWhite from "../assets/icons/bigspiralWhite.png";
+import ctaLimeBigSpiral from "../assets/icons/CtaOrnaments/topLimeSpiral.png";
+import ctaLimeBottomSpiral from "../assets/icons/CtaOrnaments/RightBottomLimeSpiral.png";
+import ctawhiteCone from "../assets/icons/CtaOrnaments/ConeWhite.png";
+import ctaLimeCone from "../assets/icons/CtaOrnaments/limeTopConePyramid.png";
+import ctaWhiteSmallTopSpiral from "../assets/icons/CtaOrnaments/whiteSmallTopSpiral.png";
+import ctaLimeHalfCircle from "../assets/icons/CtaOrnaments/limeHalfCircle.png";
+import ctaTopRightBigDiag from "../assets/icons/CtaOrnaments/toprightWhiteBigrect.png";
 
 export const ornaments = [
   {
@@ -54,5 +61,72 @@ export const ornaments = [
     x: -17,
     y: 672,
     size: 330,
+  },
+];
+
+export const ctaOrnaments = [
+  {
+    label: "cta-cone-top",
+    src: ctaLimeCone,
+    side: "right",
+    x: 173,
+    y: 0,
+    w: 189,
+    h: 189,
+  },
+  {
+    label: "cta-big-spiral",
+    src: ctaLimeBottomSpiral,
+    side: "right",
+    x: 1,
+    y: 289,
+    w: 332,
+    h: 199,
+  },
+  {
+    label: "cta-lime-spiral",
+    src: ctaLimeBigSpiral,
+    side: "left",
+    x: 0,
+    y: 0,
+    w: 266,
+    h: 225,
+  },
+  {
+    label: "cta-spiral-small",
+    src: ctaWhiteSmallTopSpiral,
+    side: "left",
+    x: 179,
+    y: 5,
+    w: 176,
+    h: 176,
+    rotate: 180,
+  },
+  {
+    label: "cta-cone-left",
+    src: ctawhiteCone,
+    side: "left",
+    x: 0,
+    y: 225,
+    w: 139,
+    h: 189,
+  },
+  {
+    label: "cta-ring",
+    src: ctaLimeHalfCircle,
+    side: "left",
+    x: 16,
+    y: 298,
+    w: 344,
+    h: 190,
+  },
+  {
+    label: "cta-strip",
+    src: ctaTopRightBigDiag,
+    side: "right",
+    x: 0,
+    y: 5,
+    w: 218,
+    h: 372,
   },
 ];
