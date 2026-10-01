@@ -1,3 +1,4 @@
+import Footer from "./components/common/Footer";
 import Banner from "./components/home/Banner";
 import CallToAction from "./components/home/CallToAction";
 import CategoryTabs from "./components/home/CategoryTabs";
@@ -22,6 +23,7 @@ export default function App() {
       <Features />
       <CallToAction />
       <Testimonials />
+      <Footer />
     </main>
   );
 }
