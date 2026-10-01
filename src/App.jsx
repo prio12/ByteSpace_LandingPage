@@ -1,4 +1,5 @@
 import Banner from "./components/home/Banner";
+import CallToAction from "./components/home/CallToAction";
 import CategoryTabs from "./components/home/CategoryTabs";
 import CourseGrid from "./components/home/CourseGrid";
 import DiscoverIntro from "./components/home/DiscoverIntro";
@@ -18,6 +19,7 @@ export default function App() {
       <ExploreIntro />
       <PathCards />
       <Features />
+      <CallToAction />
     </main>
   );
 }

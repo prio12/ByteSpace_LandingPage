@@ -41,3 +41,27 @@ export const glows = [
     background: glow(LIME, 0.6),
   },
 ];
+
+export const testimonialGlows = [
+  {
+    id: "t-ellipse-11",
+    left: 842,
+    top: -241,
+    size: 1137,
+    background: glow(LIME, 0.4),
+  },
+  {
+    id: "t-ellipse-12",
+    left: 395,
+    top: -138,
+    size: 672,
+    background: glow(LIME, 0.6),
+  },
+  {
+    id: "t-ellipse-8",
+    left: -442,
+    top: 149,
+    size: 1137,
+    background: glow(BLUE, 0.24),
+  },
+];
