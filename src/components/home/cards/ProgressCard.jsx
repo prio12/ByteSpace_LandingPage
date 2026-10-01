@@ -1,9 +1,11 @@
 import FloatingCard from "../../common/FloatingCard";
 
-const ProgressCard = ({ className = "" }) => {
+const ProgressCard = ({ className = "", tall = false }) => {
   return (
     <FloatingCard className={`w-[232px] ${className}`}>
-      <p className="text-[14px] font-medium leading-[17px]">
+      <p
+        className={`text-[14px] font-medium ${tall ? "leading-6" : "leading-[17px]"}`}
+      >
         Learning Progress
       </p>
       <p className="font-[family-name:Poppins] text-[48px] font-semibold leading-[58px]">

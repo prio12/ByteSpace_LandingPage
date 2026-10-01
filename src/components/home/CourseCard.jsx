@@ -1,7 +1,26 @@
 import { MdOutlineSignalCellularAlt, MdStarOutline } from "react-icons/md";
 import AvatarStack from "../common/AvatarStack";
 
-const CourseCard = ({ course }) => {
+const variants = {
+  default: {
+    captions: "h-[131px]",
+    titleBlock: "h-[43px]",
+    title: "leading-[120%]",
+    author: "leading-[160%]",
+    price: "text-[#003BE2]",
+    count: "bg-[#D4FB20] text-[#242528]",
+  },
+  feature: {
+    captions: "h-[136px]",
+    titleBlock: "h-12",
+    title: "leading-7",
+    author: "leading-5",
+    price: "text-[#300B6A]",
+    count: "bg-black text-white",
+  },
+};
+
+const CourseCard = ({ course, variant = "default" }) => {
   const {
     title,
     author,
@@ -13,6 +32,7 @@ const CourseCard = ({ course }) => {
     image,
     avatars,
   } = course;
+  const v = variants[variant];
 
   return (
     <article className="relative h-[384px] w-full rounded-3xl border border-[#CED0D3] bg-white p-[15px] font-[family-name:Satoshi]">
@@ -22,12 +42,16 @@ const CourseCard = ({ course }) => {
         )}
       </div>
 
-      <div className="mt-[20.86px] flex h-[131px] w-[280px] flex-col gap-4">
-        <div className="h-[43px] w-full">
-          <h3 className="truncate font-[family-name:Poppins] text-[20px] font-semibold leading-[120%] tracking-[-0.01em] text-black">
+      <div
+        className={`mt-[20.86px] flex w-[280px] flex-col gap-4 ${v.captions}`}
+      >
+        <div className={`w-full ${v.titleBlock}`}>
+          <h3
+            className={`truncate font-[family-name:Poppins] text-[20px] font-semibold tracking-[-0.01em] text-black ${v.title}`}
+          >
             {title}
           </h3>
-          <p className="text-[12px] leading-[160%] text-[#4F4F4F]">
+          <p className={`text-[12px] text-[#4F4F4F] ${v.author}`}>
             by <span className="text-[#003BE2]">{author}</span>
           </p>
         </div>
@@ -37,11 +61,17 @@ const CourseCard = ({ course }) => {
             <MdOutlineSignalCellularAlt className="size-5" />
             {level}
           </span>
-          <AvatarStack avatars={avatars} count={learners} />
+          <AvatarStack
+            avatars={avatars}
+            count={learners}
+            countClassName={v.count}
+          />
         </div>
 
         <p className="flex items-end">
-          <span className="font-[family-name:Poppins] text-[20px] font-semibold leading-6 text-[#003BE2]">
+          <span
+            className={`font-[family-name:Poppins] text-[20px] font-semibold leading-6 ${v.price}`}
+          >
             {price}
           </span>
           <span className="text-[12px] leading-[19px] text-[#4F4F4F]">
