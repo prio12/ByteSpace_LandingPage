@@ -1,4 +1,8 @@
-const AvatarStack = ({ avatars, count }) => {
+const AvatarStack = ({
+  avatars,
+  count,
+  countClassName = "bg-[#D4FB20] text-[#242528]",
+}) => {
   return (
     <div className="flex -space-x-2">
       {avatars.map((src, i) =>
@@ -13,7 +17,9 @@ const AvatarStack = ({ avatars, count }) => {
           <div key={i} className="size-8 rounded-full bg-[#CBD0D8]" />
         ),
       )}
-      <div className="grid size-8 place-items-center rounded-full bg-[#D4FB20] text-[12px] font-medium leading-5 text-[#242528]">
+      <div
+        className={`grid size-8 place-items-center rounded-full text-[12px] font-medium leading-5 ${countClassName}`}
+      >
         {count}
       </div>
     </div>

@@ -3,6 +3,7 @@ import CategoryTabs from "./components/home/CategoryTabs";
 import CourseGrid from "./components/home/CourseGrid";
 import DiscoverIntro from "./components/home/DiscoverIntro";
 import ExploreIntro from "./components/home/ExploreIntro";
+import Features from "./components/home/Features";
 import PartnerLogos from "./components/home/PartnerLogos";
 import PathCards from "./components/home/PathCards";
 
@@ -16,6 +17,7 @@ export default function App() {
       <CourseGrid />
       <ExploreIntro />
       <PathCards />
+      <Features />
     </main>
   );
 }
